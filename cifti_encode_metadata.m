@@ -1,5 +1,5 @@
 function [xmlbytes, header] = cifti_encode_metadata(cifti, filename, varargin)
-    %function cifti_decode_metadata(cifti, filename, option pairs...)
+    %function cifti_encode_metadata(cifti, filename, option pairs...)
     %   Prepares metadata to be written to a NIfTI image.
     %
     %   Specifying "..., 'keepmetadata', true" leaves the file-level metadata as-is:
