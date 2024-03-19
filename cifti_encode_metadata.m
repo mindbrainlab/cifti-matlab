@@ -54,6 +54,9 @@ function [xmlbytes, header] = cifti_encode_metadata(cifti, filename, varargin)
     header.bitpix = 32;
     header.dim(6:(6 + length(dims_c) - 1)) = dims_c;
     header.dim(1) = length(dims_c) + 4;
+    header.swap = 0;
+    header.swapped = 0;
+    header.version = 2;
     [header.intent_code, header.intent_name] = cifti_intent_code(cifti, filename);
 
     return     
